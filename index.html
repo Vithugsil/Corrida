@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Race</title>
+</head>
+
+<body bgcolor="gray">
+    <div class="container">
+
+        <div class="input-container">
+            <div class="loadLimit" id="loadLimit">
+                R$1000.00
+            </div>
+            <input type="number" placeholder="Make a bet" id="betInput" min="0" value="" />
+            <select name="cars" id="selectedCar" value="disabled">
+                <option value="uno">Uno</option>
+                <option value="marea">Marea</option>
+                <option value="renegade">Renegade</option>
+                <option value="fusca">Fusca</option>
+                <option value="veloster">Veloster</option>
+            </select>
+            <button id="startStopButton" onclick="startRace(); toggletext(); loadVerifier();">Start</button>
+
+        </div>
+
+        <div class="road-container">
+            <div class="road" id="road">
+                <div class="car" id="uno">U</div>
+                <div class="car" id="renegade">R</div>
+                <div class="car" id="marea">M</div>
+                <div class="car" id="fusca">F</div>
+                <div class="car" id="veloster">V</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
